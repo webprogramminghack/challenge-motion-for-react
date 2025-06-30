@@ -2,7 +2,7 @@
 
 ## Overview
 
-Your task is to create an interactive music player component with smooth animations using React and Framer Motion. The design specifications are provided in the Figma file, and all design tokens are already implemented in the project.
+Your task is to create an interactive music player component with smooth animations using React and Motion for React. The design specifications are provided in the Figma file, and all design tokens are already implemented in the project.
 
 ## Resources
 
@@ -122,9 +122,9 @@ When toggling between playing and paused:
 
 ## Implementation Tips
 
-### Using Framer Motion Variants
+### Using Motion Variants
 
-Consider using Framer Motion's variant system to manage the three states (playing, paused, loading) efficiently:
+Consider using Motion for React's variant system to manage the three states (playing, paused, loading) efficiently:
 
 ```jsx
 const variants = {
@@ -143,7 +143,7 @@ const variants = {
 ### Animation Orchestration
 
 - Use `AnimatePresence` for smooth transitions
-- Leverage `staggerChildren` for equalizer bars
+- Apply individual `delay` values for equalizer bars to create stagger effect
 - Apply `transition` props for consistent timing
 
 ### Performance Considerations
@@ -166,7 +166,7 @@ Your implementation will be evaluated on:
 1. Install dependencies: `npm install`
 2. Install required libraries:
    ```bash
-   npm install framer-motion lucide-react
+   npm install motion/react lucide-react
    ```
 3. Run development server: `npm run dev`
 4. Write your code in `src/app/page.tsx`
